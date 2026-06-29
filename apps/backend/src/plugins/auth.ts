@@ -1,3 +1,3 @@
-// Exact backend source reference placeholder for auth plugin.
-export const name = 'auth'
-export const setup = () => ({ name })
+import { Elysia } from 'elysia'
+
+export const auth = new Elysia({ name: 'auth' })

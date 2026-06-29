@@ -1,12 +1,3 @@
-# Frontend Source Reference - vite.config.ts
-
-Original source path: `apps/frontend/vite.config.ts`
-Line count: 102
-SHA-256: `8d0da35986efb1e6e92a9b32c89a555364e7eddc5570f1608a53e0d958e4e51c`
-
-Use this file as an exact source-shape reference when rebuilding the matching frontend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import tailwindcss from '@tailwindcss/vite'
 import { devtools } from '@tanstack/devtools-vite'
 import { tanstackStart } from '@tanstack/react-start/plugin/vite'
@@ -44,7 +35,6 @@ export default defineConfig({
 		include: ['react', 'react-dom'],
 		force: forceOptimizeDeps,
 	},
-	// @ts-expect-error
 	plugins: [
 		devtools(),
 		nitro({
@@ -108,5 +98,3 @@ export default defineConfig({
 		chunkSizeWarningLimit: 1000,
 	},
 })
-
-````
