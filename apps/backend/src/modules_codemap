@@ -1,0 +1,24 @@
+# Backend Source Reference - src/modules/codemap.md
+
+Original source path: `apps/backend/src/modules/codemap.md`
+Line count: 14
+SHA-256: `d4131c23e237cd9e8912c826bdd9dcc1e87dfe59c3d3f51e3c6481ed56b65b4b`
+
+Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
+
+````md
+# apps/backend/src/modules/
+
+## Responsibility
+Feature-module layer for domain APIs like auth, AI, billing, flows, conversations, contacts, messaging, teams, commerce, webhooks, and admin surfaces.
+
+## Design
+Each module is a focused Elysia router, usually paired with service/model files. Cross-cutting state comes from appContext and shared lib helpers; many modules use Prisma directly for transactional work.
+
+## Flow
+Routers validate input, resolve app/organization context, call service methods, and return shaped payloads. Modules with heavy logic split orchestration into service files while keeping HTTP handlers thin.
+
+## Integration
+Modules are mounted by src/modules/index.ts into src/index.ts. They integrate with Prisma models, Redis/realtime helpers, Better Auth, and external providers such as Xendit, WhatsApp/Meta, TikTok, and S3.
+
+````

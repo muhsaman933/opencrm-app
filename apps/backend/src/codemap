@@ -1,0 +1,24 @@
+# Backend Source Reference - src/codemap.md
+
+Original source path: `apps/backend/src/codemap.md`
+Line count: 14
+SHA-256: `1c38d7df0e91bb132f5fac2d44da1d2bef58ffd67d7fa762b01eb5d8a9ccf46f`
+
+Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
+
+````md
+# apps/backend/src/
+
+## Responsibility
+Application composition layer: wires startup, global plugins, route groups, shared libs, workers, and compatibility endpoints.
+
+## Design
+Modular Elysia composition. src/index.ts is the main composition root; modules export feature routers from src/modules/index.ts; shared infrastructure lives in src/lib and src/plugins.
+
+## Flow
+Startup loads env, selects APP_MODE, mounts CORS + auth/openapi/context/socket plugins, then groups feature routers under /api. Route handlers delegate to module services, which call Prisma/Redis/external SDKs.
+
+## Integration
+Connects feature routers to shared context and infrastructure, and exposes compatibility endpoints for older clients alongside the newer module-based API surface.
+
+````

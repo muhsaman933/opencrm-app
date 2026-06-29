@@ -1,0 +1,30 @@
+# Backend Source Reference - src/modules/instagram/codemap.md
+
+Original source path: `apps/backend/src/modules/instagram/codemap.md`
+Line count: 20
+SHA-256: `8d237b87ad87d6c6577c8176e2ba9ffe84b075021dafb09994e2a352868098ea`
+
+Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
+
+````md
+# apps/backend/src/modules/instagram/
+
+<!-- Explorer: Fill in this section with architectural understanding -->
+
+## Responsibility
+
+<!-- What is this folder's job in the system? -->
+
+## Design
+
+<!-- Key patterns, abstractions, architectural decisions -->
+
+## Flow
+
+<!-- How does data/control flow through this module? -->
+
+## Integration
+
+<!-- How does it connect to other parts of the system? -->
+
+````

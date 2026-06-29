@@ -1,0 +1,61 @@
+# Backend Source Reference - src/modules/message/model.ts
+
+Original source path: `apps/backend/src/modules/message/model.ts`
+Line count: 51
+SHA-256: `a4c12a91e129d586f8d549c8aa1b629cdc596cd2011186eeff6e4715935568d5`
+
+Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
+
+````ts
+import { t } from 'elysia'
+
+export const MessageModel = {
+	message: t.Object({
+		id: t.String(),
+		conversation_id: t.String(),
+		sender_type: t.String(),
+		sender_id: t.Nullable(t.String()),
+		content: t.Nullable(t.String()),
+		content_type: t.String(),
+		external_id: t.Nullable(t.String()),
+		status: t.Nullable(t.String()),
+		created_at: t.Nullable(t.Date()),
+	}),
+
+	messageWithMedia: t.Object({
+		id: t.String(),
+		conversation_id: t.String(),
+		sender_type: t.String(),
+		content: t.Nullable(t.String()),
+		content_type: t.String(),
+		status: t.Nullable(t.String()),
+		created_at: t.Nullable(t.Date()),
+		media: t.Optional(
+			t.Array(
+				t.Object({
+					id: t.String(),
+					media_url: t.Nullable(t.String()),
+					media_type: t.Nullable(t.String()),
+					filename: t.Nullable(t.String()),
+				}),
+			),
+		),
+	}),
+} as const
+
+export const MessageRequestModel = {
+	send: t.Object({
+		conversationId: t.String(),
+		content: t.String(),
+		contentType: t.Optional(t.String()),
+		mediaIds: t.Optional(t.Array(t.String())),
+	}),
+
+	sendTemplate: t.Object({
+		conversationId: t.String(),
+		templateName: t.String(),
+		templateVariables: t.Optional(t.Record(t.String(), t.String())),
+	}),
+} as const
+
+````
