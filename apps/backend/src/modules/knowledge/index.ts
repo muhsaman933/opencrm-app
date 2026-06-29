@@ -1,12 +1,3 @@
-# Backend Source Reference - src/modules/knowledge/index.ts
-
-Original source path: `apps/backend/src/modules/knowledge/index.ts`
-Line count: 627
-SHA-256: `713c1d990b58c4b3bafa1ec2af245c2671f48a3e5db1d48367ab2bb6babf55f7`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import { createHash } from "crypto";
 import { Elysia, t } from "elysia";
 import { KnowledgeService } from "./service";
@@ -633,5 +624,3 @@ export const knowledge = new Elysia({
       query: t.Object({ appId: t.Optional(t.String()) }),
     },
   );
-
-````

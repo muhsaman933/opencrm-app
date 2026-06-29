@@ -1,12 +1,3 @@
-# Backend Source Reference - src/modules/chatbot/followup-service.ts
-
-Original source path: `apps/backend/src/modules/chatbot/followup-service.ts`
-Line count: 2063
-SHA-256: `dcece988b58e85b82dcfaded6b8e6bc1fe2058a605115377f85f2602d2b419e0`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import prisma from '../../lib/prisma'
 import { maintenanceQueue } from '../../lib/queue'
 import { isUuid } from '../../lib/utils'
@@ -2069,5 +2060,3 @@ export const __test__ = {
 	hasFollowupPromptLeakage,
 	shouldRejectGeneratedFollowupSegments,
 }
-
-````

@@ -1,12 +1,3 @@
-# Backend Source Reference - src/modules/agent/service.ts
-
-Original source path: `apps/backend/src/modules/agent/service.ts`
-Line count: 505
-SHA-256: `32596e56e8e72a68868ee0bb9baba0eb50e6a3cb8918e9153dbc4af4952ae42f`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import bcrypt from 'bcryptjs'
 import { syncBetterAuthCredentialAccount } from '../../lib/better-auth-credentials'
 import type { Prisma } from '../../generated/prisma'
@@ -511,5 +502,3 @@ export abstract class AgentService {
 		})
 	}
 }
-
-````

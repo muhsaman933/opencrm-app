@@ -1,12 +1,3 @@
-# Backend Source Reference - src/modules/whatsapp-templates/index.ts
-
-Original source path: `apps/backend/src/modules/whatsapp-templates/index.ts`
-Line count: 214
-SHA-256: `dc81c0fe35307bcf125ec0d413a1bd5f09b3788bb60c39baf34d3e881688e310`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import { Elysia, t } from 'elysia'
 import { appContext } from '../../plugins'
 import prisma from '../../lib/prisma'
@@ -220,5 +211,3 @@ export const whatsappModule = new Elysia({ tags: ['WhatsApp'] })
 			),
 		},
 	)
-
-````

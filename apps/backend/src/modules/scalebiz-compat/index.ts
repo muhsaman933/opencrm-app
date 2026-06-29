@@ -1,12 +1,3 @@
-# Backend Source Reference - src/modules/scalebiz-compat/index.ts
-
-Original source path: `apps/backend/src/modules/scalebiz-compat/index.ts`
-Line count: 760
-SHA-256: `47f15847772cdb293cec45814bcbc0abb2a0186ef7cdf20317debcdc558d8054`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import { Elysia } from 'elysia'
 import prisma from '../../lib/prisma'
 import { appContext } from '../../plugins'
@@ -766,5 +757,3 @@ export const scalebizCompat = new Elysia({
 			return { success: true, webhook_id: webhookId }
 		},
 	)
-
-````

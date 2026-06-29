@@ -1,12 +1,3 @@
-# Backend Source Reference - src/modules/user/index.ts
-
-Original source path: `apps/backend/src/modules/user/index.ts`
-Line count: 131
-SHA-256: `a4a4ff4a2fa2541cfcc06e4fec4141e572bd04e622a30299e80d38b226c23add`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import { Elysia, t } from 'elysia'
 import { UserModel, UserRequestModel } from './model'
 import { UserService } from './service'
@@ -137,5 +128,3 @@ export const user = new Elysia({ prefix: '/user', tags: ['User'] })
 	.post('/timezone/reset', async () => {
 		return { success: true, timezone: 'Asia/Jakarta' }
 	})
-
-````

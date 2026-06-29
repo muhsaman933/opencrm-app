@@ -1,12 +1,3 @@
-# Backend Source Reference - src/modules/team/index.ts
-
-Original source path: `apps/backend/src/modules/team/index.ts`
-Line count: 121
-SHA-256: `42a4f27ad2a4e2faee1fa9e8ec777fd8ffd9bbbab7c5511f780130c92b6dfa7a`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import { Elysia, t } from 'elysia'
 import { TeamService } from './service'
 import { TeamModel, TeamRequestModel } from './model'
@@ -127,5 +118,3 @@ export const team = new Elysia({ prefix: '/teams', tags: ['Team'] })
 			params: t.Object({ id: t.String(), userId: t.String() }),
 		},
 	)
-
-````

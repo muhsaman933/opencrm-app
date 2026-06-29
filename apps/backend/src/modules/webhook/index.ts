@@ -1,12 +1,3 @@
-# Backend Source Reference - src/modules/webhook/index.ts
-
-Original source path: `apps/backend/src/modules/webhook/index.ts`
-Line count: 187
-SHA-256: `1025848deaeee576dc2964648a63e7bdc513215955a8dce01c7a1202833bb7e7`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import { Elysia, t } from 'elysia'
 import { WebhookService } from './service'
 import { appContext } from '../../plugins'
@@ -193,5 +184,3 @@ export const webhook = new Elysia({ prefix: '/webhooks', tags: ['Webhook'] })
 			params: t.Object({ id: t.String() }),
 		},
 	)
-
-````

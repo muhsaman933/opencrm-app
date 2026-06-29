@@ -1,12 +1,3 @@
-# Backend Source Reference - src/modules/whatsapp/webhook-config.ts
-
-Original source path: `apps/backend/src/modules/whatsapp/webhook-config.ts`
-Line count: 153
-SHA-256: `eed54c19bc85f5a755b7288fe4ac56e88900a44d3e97fcdba8b7dd7e2f1471fe`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import { getBaileysServiceSendUrl } from './baileys-service-client'
 
 const META_VERIFY_TOKEN =
@@ -159,5 +150,3 @@ export function getBaileysProviderWebhookUrl(
 }
 
 export { META_VERIFY_TOKEN }
-
-````

@@ -1,12 +1,3 @@
-# Backend Source Reference - src/modules/whatsapp/index.ts
-
-Original source path: `apps/backend/src/modules/whatsapp/index.ts`
-Line count: 436
-SHA-256: `45210d764bcb7827f5fda9d3741e62aa8ca086f556f70a9e507792325f4220a3`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import { Elysia, t } from 'elysia'
 import {
 	WhatsAppChannelAssignmentConflictError,
@@ -442,5 +433,3 @@ export const whatsapp = new Elysia({ tags: ['WhatsApp'] })
 		set.status = 410
 		return { error: 'Embedded signup is no longer available. Please use manual token connection.' }
 	})
-
-````

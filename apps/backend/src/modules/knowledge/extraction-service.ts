@@ -1,12 +1,3 @@
-# Backend Source Reference - src/modules/knowledge/extraction-service.ts
-
-Original source path: `apps/backend/src/modules/knowledge/extraction-service.ts`
-Line count: 1066
-SHA-256: `3f8b10eef9c80c19ef678c56bdb31bf236686d76d6bdbbe80c4c3c077334d9ae`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import { Buffer } from 'buffer'
 import { AIService } from '../ai/service'
 
@@ -1072,5 +1063,3 @@ export abstract class KnowledgeExtractionService {
 		)
 	}
 }
-
-````

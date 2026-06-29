@@ -1,12 +1,3 @@
-# Backend Source Reference - src/modules/conversation/note-service.ts
-
-Original source path: `apps/backend/src/modules/conversation/note-service.ts`
-Line count: 119
-SHA-256: `128a11a6a252791bbb55a6dd6d3c4fa406f7d69bef4e3e4c265e68c91dfc9938`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import prisma from '../../lib/prisma'
 import { isUuid } from '../../lib/utils'
 import { BusinessWebhookDispatchService } from '../business-webhooks/dispatch-service'
@@ -125,5 +116,3 @@ export abstract class NoteService {
 		return prisma.conversation_notes.delete({ where: { id: noteId } })
 	}
 }
-
-````

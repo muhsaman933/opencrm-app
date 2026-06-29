@@ -1,12 +1,3 @@
-# Backend Source Reference - prisma/seed.ts
-
-Original source path: `apps/backend/prisma/seed.ts`
-Line count: 147
-SHA-256: `684d85302225fdb2f4442ceb0761f81150e4eeeeb373a4da3f18529ee21da65d`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import prisma from '../src/lib/prisma'
 
 async function main() {
@@ -153,5 +144,3 @@ main()
 	.finally(async () => {
 		await prisma.$disconnect()
 	})
-
-````

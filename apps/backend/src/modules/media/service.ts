@@ -1,12 +1,3 @@
-# Backend Source Reference - src/modules/media/service.ts
-
-Original source path: `apps/backend/src/modules/media/service.ts`
-Line count: 131
-SHA-256: `59fc8905e61d279f1ab57552c9f05ff86ec5e03445eb90bd70580230a9540565`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import { PutObjectCommand } from '@aws-sdk/client-s3'
 import {
 	s3,
@@ -137,5 +128,3 @@ export abstract class MediaService {
 		}))
 	}
 }
-
-````

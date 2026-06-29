@@ -1,12 +1,3 @@
-# Backend Source Reference - prisma/schema.prisma
-
-Original source path: `apps/backend/prisma/schema.prisma`
-Line count: 2304
-SHA-256: `e1d81ac0fd12323bfb6afee3066a85a4166348072f23ca53238900fd859464ee`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````prisma
 generator client {
   provider        = "prisma-client-js"
   output          = "../src/generated/prisma"
@@ -2311,4 +2302,3 @@ model subscriptions {
   @@index([status], map: "idx_subscriptions_status")
 }
 
-````

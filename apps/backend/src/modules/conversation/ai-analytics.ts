@@ -1,12 +1,3 @@
-# Backend Source Reference - src/modules/conversation/ai-analytics.ts
-
-Original source path: `apps/backend/src/modules/conversation/ai-analytics.ts`
-Line count: 226
-SHA-256: `5736e5882426f5e031d6541a73c4d74425ebe206de472c0b6606099822407e35`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 export type ConversationAiAnalytics = {
 	confidence: number | null
 	intent: string | null
@@ -232,5 +223,3 @@ export function deriveAiAnalyticsFromConversation(params: {
 
 	return normalizeAiAnalytics(fallback, options)
 }
-
-````

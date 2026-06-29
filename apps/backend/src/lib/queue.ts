@@ -1,12 +1,3 @@
-# Backend Source Reference - src/lib/queue.ts
-
-Original source path: `apps/backend/src/lib/queue.ts`
-Line count: 50
-SHA-256: `02575707582b827bf74d526a047e6d05ba838680326318c50a26a009cacce159`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import { Queue } from 'bullmq'
 import { redis } from './redis'
 
@@ -56,5 +47,3 @@ export const addJob = async (queueName: string, data: any, opts = {}) => {
 
 	return queue.add(queueName, data, opts)
 }
-
-````

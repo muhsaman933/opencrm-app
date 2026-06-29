@@ -1,12 +1,3 @@
-# Backend Source Reference - src/modules/commerce/pakasir-client.ts
-
-Original source path: `apps/backend/src/modules/commerce/pakasir-client.ts`
-Line count: 479
-SHA-256: `a73fd57dc5b15a31eeb8e8ec84feec3faff1912c32d8f2e3da1468e6b999689d`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 const REQUIRED_ENV = ['PAKASIR_API_KEY'] as const
 const DEFAULT_BASE_URL = 'https://app.pakasir.com/api'
 
@@ -485,5 +476,3 @@ export abstract class PakasirClient {
 		return null
 	}
 }
-
-````

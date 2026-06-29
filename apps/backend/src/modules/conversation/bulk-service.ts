@@ -1,12 +1,3 @@
-# Backend Source Reference - src/modules/conversation/bulk-service.ts
-
-Original source path: `apps/backend/src/modules/conversation/bulk-service.ts`
-Line count: 491
-SHA-256: `8c4af989a25be6d21991c297d245ba4c84348d513a4708ee53ae85b7e2f57eac`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import type { Job } from 'bullmq'
 import prisma from '../../lib/prisma'
 import { conversationBulkQueue } from '../../lib/queue'
@@ -497,5 +488,3 @@ export abstract class ConversationBulkEditService {
 		})
 	}
 }
-
-````

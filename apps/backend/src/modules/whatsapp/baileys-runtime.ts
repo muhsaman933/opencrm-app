@@ -1,12 +1,3 @@
-# Backend Source Reference - src/modules/whatsapp/baileys-runtime.ts
-
-Original source path: `apps/backend/src/modules/whatsapp/baileys-runtime.ts`
-Line count: 1168
-SHA-256: `ed7c2c0b61b442ba077bd096b73978448e91638076cde424ed700faacb3c9d5e`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import { PutObjectCommand } from '@aws-sdk/client-s3'
 import makeWASocket, {
 	BufferJSON,
@@ -1174,5 +1165,3 @@ export abstract class BaileysRuntimeService {
 		entry.restartTimer = null
 	}
 }
-
-````

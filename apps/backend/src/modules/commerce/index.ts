@@ -1,12 +1,3 @@
-# Backend Source Reference - src/modules/commerce/index.ts
-
-Original source path: `apps/backend/src/modules/commerce/index.ts`
-Line count: 519
-SHA-256: `5f6b844e090eb0da8f6d9bec5b7da1bd957407dcf117bddc947821f64b1dda64`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import { Elysia, t } from 'elysia'
 import { appContext } from '../../plugins'
 import { CommerceService } from './service'
@@ -525,5 +516,3 @@ export const commerce = new Elysia({ tags: ['Commerce'] })
 			query: t.Any(),
 		},
 	)
-
-````

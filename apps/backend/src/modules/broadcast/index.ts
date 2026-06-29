@@ -1,12 +1,3 @@
-# Backend Source Reference - src/modules/broadcast/index.ts
-
-Original source path: `apps/backend/src/modules/broadcast/index.ts`
-Line count: 183
-SHA-256: `b50bc03081be1615882b817f2a0e3518f5b6860652414f9e992a002eafe9902f`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import { Elysia, t } from 'elysia'
 import { BroadcastService } from './service'
 import { BroadcastModel, BroadcastRequestModel } from './model'
@@ -189,5 +180,3 @@ export const broadcast = new Elysia({
 			query: t.Object({ appId: t.Optional(t.String()) }),
 		},
 	)
-
-````

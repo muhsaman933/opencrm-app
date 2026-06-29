@@ -1,12 +1,3 @@
-# Backend Source Reference - src/modules/ai/index.ts
-
-Original source path: `apps/backend/src/modules/ai/index.ts`
-Line count: 481
-SHA-256: `d04eaa2248966d9b9c1290015aa2f1fb1ababe8b01447057b0c599df40a1df29`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import { Elysia, t } from 'elysia'
 import { appContext } from '../../plugins'
 import { AIRequestModel } from './model'
@@ -487,5 +478,3 @@ export const ai = new Elysia({ prefix: '/ai', tags: ['AI'] })
 			}),
 		},
 	)
-
-````

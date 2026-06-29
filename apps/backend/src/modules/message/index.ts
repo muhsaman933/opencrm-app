@@ -1,12 +1,3 @@
-# Backend Source Reference - src/modules/message/index.ts
-
-Original source path: `apps/backend/src/modules/message/index.ts`
-Line count: 84
-SHA-256: `ba6c8fa11baaf8b00ebadc92eb0ae6c3de7dc0fb3c887897d0d8c7cb1b3a97bf`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import { Elysia, t } from 'elysia'
 import { MessageService } from './service'
 import { appContext } from '../../plugins'
@@ -90,5 +81,3 @@ export const message = new Elysia({ prefix: '/messages', tags: ['Message'] })
 			}),
 		},
 	)
-
-````

@@ -1,12 +1,3 @@
-# Backend Source Reference - src/modules/crm/model.ts
-
-Original source path: `apps/backend/src/modules/crm/model.ts`
-Line count: 56
-SHA-256: `dea97a700d25dc0c95dbcb30c99bf429e04975b3d6ca2acc268070179d8d0995`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import { t } from 'elysia'
 
 export const CRMModel = {
@@ -62,5 +53,3 @@ export const CRMRequestModel = {
 		notes: t.Optional(t.String()),
 	}),
 } as const
-
-````

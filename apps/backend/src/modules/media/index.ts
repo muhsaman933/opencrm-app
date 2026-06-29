@@ -1,12 +1,3 @@
-# Backend Source Reference - src/modules/media/index.ts
-
-Original source path: `apps/backend/src/modules/media/index.ts`
-Line count: 76
-SHA-256: `283e190b094ade07a9af72bd41c44eb587bb3f86f99a43a4b5cf92b1f7f6a169`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import { Elysia, t } from 'elysia'
 import { appContext } from '../../plugins'
 import { MediaService } from './service'
@@ -82,5 +73,3 @@ export const media = new Elysia({ prefix: '/media', tags: ['Media'] })
 			},
 		},
 	)
-
-````

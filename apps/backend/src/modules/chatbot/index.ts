@@ -1,12 +1,3 @@
-# Backend Source Reference - src/modules/chatbot/index.ts
-
-Original source path: `apps/backend/src/modules/chatbot/index.ts`
-Line count: 504
-SHA-256: `50c6b8e983e3288fa17a29d2774d0775646d6e1da88baa2c63c50ca1c41f2d80`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import { Elysia, t } from 'elysia'
 import { ChatbotService } from './service'
 import { ChatbotModel, ChatbotRequestModel } from './model'
@@ -510,5 +501,3 @@ export const chatbot = new Elysia({ prefix: '/chatbots', tags: ['Chatbot'] })
 			params: t.Object({ id: t.String(), docId: t.String() }),
 		},
 	)
-
-````

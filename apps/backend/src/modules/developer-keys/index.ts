@@ -1,12 +1,3 @@
-# Backend Source Reference - src/modules/developer-keys/index.ts
-
-Original source path: `apps/backend/src/modules/developer-keys/index.ts`
-Line count: 141
-SHA-256: `9a6ae24fb70ac35a883c0e8dfeed65fd31ff002ead305afd8ba43b6c51276c49`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import { Elysia, t } from 'elysia'
 import { appContext } from '../../plugins'
 import { DeveloperKeysService } from './service'
@@ -147,5 +138,3 @@ export const developerKeys = new Elysia({
 			}),
 		},
 	)
-
-````

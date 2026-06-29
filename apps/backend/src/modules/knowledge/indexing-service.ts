@@ -1,12 +1,3 @@
-# Backend Source Reference - src/modules/knowledge/indexing-service.ts
-
-Original source path: `apps/backend/src/modules/knowledge/indexing-service.ts`
-Line count: 1145
-SHA-256: `94f8b256a0a184eb5b1eecadf84cebc6febc40c9b4ce980ed88827315ab9437d`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import crypto from "crypto";
 import prisma from "../../lib/prisma";
 import redis from "../../lib/redis";
@@ -1151,5 +1142,3 @@ export abstract class KnowledgeIndexService {
     await purgeSource(payload);
   }
 }
-
-````

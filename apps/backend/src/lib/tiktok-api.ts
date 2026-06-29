@@ -1,12 +1,3 @@
-# Backend Source Reference - src/lib/tiktok-api.ts
-
-Original source path: `apps/backend/src/lib/tiktok-api.ts`
-Line count: 121
-SHA-256: `f2b49a5e6023bce65bef15ce0634b134137669c4f2dd4e05bea15ffee6a3b37d`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 type TikTokMessageType = 'text' | 'image' | 'video' | 'audio' | 'document'
 
 type TikTokSendMessageRequest = {
@@ -127,5 +118,3 @@ export async function sendTikTokMessage(
 		raw: data,
 	}
 }
-
-````

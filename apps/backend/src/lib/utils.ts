@@ -1,12 +1,3 @@
-# Backend Source Reference - src/lib/utils.ts
-
-Original source path: `apps/backend/src/lib/utils.ts`
-Line count: 41
-SHA-256: `24a0c1d3c7ff995cc2f7ba6c20cfad47572ae83d155052e857eb21fc6a86e0b9`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import prisma from './prisma'
 
 /**
@@ -47,5 +38,3 @@ export async function resolveOrganizationId(
 		return null
 	return organizationId
 }
-
-````

@@ -1,12 +1,3 @@
-# Backend Source Reference - src/modules/user/service.ts
-
-Original source path: `apps/backend/src/modules/user/service.ts`
-Line count: 82
-SHA-256: `d18040687234bbcfe6b073f1f7c7881012e9695d6425b9f5a0233132860a48d2`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 // @ts-nocheck
 import prisma from '../../lib/prisma'
 import { resolveAppId } from '../../lib/utils'
@@ -88,5 +79,3 @@ export abstract class UserService {
 		})
 	}
 }
-
-````

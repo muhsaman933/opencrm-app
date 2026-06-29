@@ -1,12 +1,3 @@
-# Backend Source Reference - src/modules/instagram/service.ts
-
-Original source path: `apps/backend/src/modules/instagram/service.ts`
-Line count: 319
-SHA-256: `e6a12a66db5216c8d57b5227d6c95e64f237ab3fd53794ac8382de239463d7ec`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import prisma from '../../lib/prisma'
 
 function asRecord(value: unknown): Record<string, unknown> {
@@ -325,5 +316,3 @@ export abstract class InstagramService {
 		}
 	}
 }
-
-````

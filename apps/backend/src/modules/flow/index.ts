@@ -1,12 +1,3 @@
-# Backend Source Reference - src/modules/flow/index.ts
-
-Original source path: `apps/backend/src/modules/flow/index.ts`
-Line count: 326
-SHA-256: `74ea065374cc1cb301f466765e7b289e27ed4125eb678ba1764a60c95ecf5f70`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import { Elysia, t } from 'elysia'
 import { FlowService } from './service'
 import { FlowRequestModel } from './model'
@@ -332,5 +323,3 @@ export const flow = new Elysia({ prefix: '/flows', tags: ['Flow'] })
 			query: t.Object({ appId: t.Optional(t.String()) }),
 		},
 	)
-
-````

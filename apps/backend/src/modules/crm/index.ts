@@ -1,12 +1,3 @@
-# Backend Source Reference - src/modules/crm/index.ts
-
-Original source path: `apps/backend/src/modules/crm/index.ts`
-Line count: 74
-SHA-256: `887dfb752d605862e007e80c285df2452b6a282ce04fec890847feea3749a4b2`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import { Elysia, t } from 'elysia'
 import { CRMService } from './service'
 import { CRMModel, CRMRequestModel } from './model'
@@ -80,5 +71,3 @@ export const crm = new Elysia({ prefix: '/crm', tags: ['CRM'] })
 			body: CRMRequestModel.updateDeal,
 		},
 	)
-
-````

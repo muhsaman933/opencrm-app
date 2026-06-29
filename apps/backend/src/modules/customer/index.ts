@@ -1,12 +1,3 @@
-# Backend Source Reference - src/modules/customer/index.ts
-
-Original source path: `apps/backend/src/modules/customer/index.ts`
-Line count: 231
-SHA-256: `5de98d4d273c8d030031e0c896e46d44727b0074e78b01e3b187abe60d41daee`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import { Elysia, t } from 'elysia'
 import { appContext } from '../../plugins'
 import { CustomerService } from './service'
@@ -237,5 +228,3 @@ export const customer = new Elysia({ prefix: '/customers', tags: ['Customer'] })
 			params: t.Object({ id: t.String(), tagId: t.String() }),
 		},
 	)
-
-````

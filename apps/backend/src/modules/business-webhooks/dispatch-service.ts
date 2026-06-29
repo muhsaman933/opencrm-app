@@ -1,12 +1,3 @@
-# Backend Source Reference - src/modules/business-webhooks/dispatch-service.ts
-
-Original source path: `apps/backend/src/modules/business-webhooks/dispatch-service.ts`
-Line count: 362
-SHA-256: `d892273b57d3ecaea22a92e2a6b7d111ad85e90b6cffaeb03cc10a945fd235bd`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import crypto from 'crypto'
 import prisma from '../../lib/prisma'
 import {
@@ -368,5 +359,3 @@ export abstract class BusinessWebhookDispatchService {
 		}
 	}
 }
-
-````

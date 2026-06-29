@@ -1,12 +1,3 @@
-# Backend Source Reference - src/modules/agent/model.ts
-
-Original source path: `apps/backend/src/modules/agent/model.ts`
-Line count: 48
-SHA-256: `984be443cba788a3221dadeb0a2460a738fc230364ab073f654d8d3ca454e85a`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import { t } from 'elysia'
 
 export const AgentModel = {
@@ -54,5 +45,3 @@ export const AgentRequestModel = {
 		channels: t.Optional(t.Array(t.String())),
 	}),
 } as const
-
-````

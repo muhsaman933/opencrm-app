@@ -1,12 +1,3 @@
-# Backend Source Reference - src/lib/meta-api.ts
-
-Original source path: `apps/backend/src/lib/meta-api.ts`
-Line count: 145
-SHA-256: `a11d730c772f0ef2784771354eb9bd243207d0c39af6a8de4e046e4b839e92d4`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 type WhatsAppMessageType =
 	| 'text'
 	| 'template'
@@ -151,5 +142,3 @@ export async function sendInstagramMessage(
 
 	return data
 }
-
-````

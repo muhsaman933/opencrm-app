@@ -1,12 +1,3 @@
-# Backend Source Reference - src/modules/auth/index.ts
-
-Original source path: `apps/backend/src/modules/auth/index.ts`
-Line count: 619
-SHA-256: `0c4df21a6d2c82f08d62622a614079c31b91689f8a9618ee1bfa6b79b4d8835d`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 // @ts-nocheck
 import bcrypt from 'bcryptjs'
 import { Elysia, t } from 'elysia'
@@ -625,5 +616,3 @@ export const authModule = new Elysia({ prefix: '/auth', tags: ['Authority'] })
 		await auth.api.signOut({ headers: request.headers })
 		return { success: true }
 	})
-
-````

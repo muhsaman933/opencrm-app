@@ -1,12 +1,3 @@
-# Backend Source Reference - src/modules/orders/index.ts
-
-Original source path: `apps/backend/src/modules/orders/index.ts`
-Line count: 867
-SHA-256: `edca8bab2eddb916a920fa4331cdd9797e061f2599169ff86e5fb8687faec491`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import { Elysia, t } from 'elysia'
 import prisma from '../../lib/prisma'
 import { appContext } from '../../plugins'
@@ -873,5 +864,3 @@ export const orders = new Elysia({ prefix: '/orders', tags: ['Orders'] })
 			}),
 		},
 	)
-
-````

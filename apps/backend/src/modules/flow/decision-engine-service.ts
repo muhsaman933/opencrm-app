@@ -1,12 +1,3 @@
-# Backend Source Reference - src/modules/flow/decision-engine-service.ts
-
-Original source path: `apps/backend/src/modules/flow/decision-engine-service.ts`
-Line count: 2285
-SHA-256: `82089139f6550b169eba144b97bfd5fda8cb6f2f57bf6075a80d64767e73d324`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import prisma from '../../lib/prisma'
 import { isUuid } from '../../lib/utils'
 import { buildAiAnalytics } from '../conversation/ai-analytics'
@@ -2291,5 +2282,3 @@ export const __test__ = {
 	computeDecisionEvaluationMetrics,
 	computeOverallConfidence,
 }
-
-````

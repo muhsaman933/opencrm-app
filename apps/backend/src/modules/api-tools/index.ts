@@ -1,12 +1,3 @@
-# Backend Source Reference - src/modules/api-tools/index.ts
-
-Original source path: `apps/backend/src/modules/api-tools/index.ts`
-Line count: 304
-SHA-256: `dad36dc7b3406046da1d1198d45c139f4b27ea8dd9c8b93f8017d5e1f0a01e0c`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import { Elysia, t } from 'elysia'
 import { appContext } from '../../plugins'
 import { APIToolsService } from './service'
@@ -310,5 +301,3 @@ export const apiTools = new Elysia({ prefix: '/ai_tools', tags: ['API Tools'] })
 			}),
 		},
 	)
-
-````

@@ -1,12 +1,3 @@
-# Backend Source Reference - src/lib/s3.ts
-
-Original source path: `apps/backend/src/lib/s3.ts`
-Line count: 127
-SHA-256: `904090fc01549708925f5a842b10a57b613276f39762a47f0604afd9221cc171`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import { S3Client } from '@aws-sdk/client-s3'
 
 const derivedR2Endpoint = process.env.R2_ACCOUNT_ID
@@ -133,5 +124,3 @@ export function getS3UploadConfigurationError(): string | null {
 }
 
 export default s3
-
-````

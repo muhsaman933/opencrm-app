@@ -1,12 +1,3 @@
-# Backend Source Reference - src/modules/waba/index.ts
-
-Original source path: `apps/backend/src/modules/waba/index.ts`
-Line count: 75
-SHA-256: `77a28d9d265068ba55b2aa30a550d4939d7043c1f0f1687d79ea51cad464359c`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import { Elysia } from 'elysia'
 import { appContext } from '../../plugins'
 import { WhatsAppRequestModel } from '../whatsapp/model'
@@ -81,5 +72,3 @@ export const waba = new Elysia({ tags: ['WABA'] })
 			body: WhatsAppRequestModel.manualConnect,
 		},
 	)
-
-````

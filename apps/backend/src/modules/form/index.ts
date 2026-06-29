@@ -1,12 +1,3 @@
-# Backend Source Reference - src/modules/form/index.ts
-
-Original source path: `apps/backend/src/modules/form/index.ts`
-Line count: 58
-SHA-256: `a5603ff207b6d201d89f1c20b1af78dfa6a9fd8945681e8c8c776f92ebe23e86`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import { Elysia, t } from 'elysia'
 import { FormService } from './service'
 import { FormModel, FormRequestModel } from './model'
@@ -64,5 +55,3 @@ export const form = new Elysia({ prefix: '/forms', tags: ['Advanced'] })
 			params: t.Object({ id: t.String() }),
 		},
 	)
-
-````

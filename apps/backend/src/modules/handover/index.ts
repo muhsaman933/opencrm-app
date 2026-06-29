@@ -1,12 +1,3 @@
-# Backend Source Reference - src/modules/handover/index.ts
-
-Original source path: `apps/backend/src/modules/handover/index.ts`
-Line count: 268
-SHA-256: `f43a55a70706a814e05fa00e0095a1f28ec6fb5546702ecf3e0ffde3cd14aa26`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import { Elysia, t } from 'elysia'
 import { HandoverService } from './service'
 import { appContext } from '../../plugins'
@@ -274,5 +265,3 @@ export const handover = new Elysia({
 			params: t.Object({ conversationId: t.String() }),
 		},
 	)
-
-````

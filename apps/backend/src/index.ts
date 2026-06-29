@@ -1,12 +1,3 @@
-# Backend Source Reference - src/index.ts
-
-Original source path: `apps/backend/src/index.ts`
-Line count: 344
-SHA-256: `159f4101b08d0845d66c6a3b9e11d7c6d44e6254150a829611803c24b662a085`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import { cors } from '@elysiajs/cors'
 import { Elysia } from 'elysia'
 import { config as loadDotEnv } from 'dotenv'
@@ -350,5 +341,3 @@ if (IS_API_MODE) {
 
 // Export type for Eden Treaty
 export type App = typeof app
-
-````

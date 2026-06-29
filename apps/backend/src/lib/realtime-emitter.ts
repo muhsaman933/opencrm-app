@@ -1,12 +1,3 @@
-# Backend Source Reference - src/lib/realtime-emitter.ts
-
-Original source path: `apps/backend/src/lib/realtime-emitter.ts`
-Line count: 40
-SHA-256: `2d3385bfa104dcfddc4e55b25f31593af9260296e3a5de0e3362e57d6bd8068f`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import Redis from 'ioredis'
 import { Emitter } from '@socket.io/redis-emitter'
 
@@ -46,5 +37,3 @@ export function emitRealtimeToRoom(
 		return false
 	}
 }
-
-````

@@ -1,12 +1,3 @@
-# Backend Source Reference - src/modules/conversation/index.ts
-
-Original source path: `apps/backend/src/modules/conversation/index.ts`
-Line count: 895
-SHA-256: `e3f81ff1c6244c0fcdfd85f6949532388b9178318e459472432047439d494765`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import { Elysia, t } from 'elysia'
 import { appContext } from '../../plugins'
 import { getRealtimeIO } from '../../lib/realtime'
@@ -901,5 +892,3 @@ export const conversation = new Elysia({
 			params: t.Object({ id: t.String(), agentId: t.String() }),
 		},
 	)
-
-````

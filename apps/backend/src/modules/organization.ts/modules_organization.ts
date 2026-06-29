@@ -1,12 +1,3 @@
-# Backend Source Reference - src/modules/organization.ts
-
-Original source path: `apps/backend/src/modules/organization.ts`
-Line count: 88
-SHA-256: `9fd3fdab2fe83a24c0b27f90fb2708822ce9c8787e1a95c191b91c0fb42766af`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import { Elysia, t } from 'elysia'
 
 type AnyObj = Record<string, any>
@@ -95,4 +86,3 @@ export const organizationModule = new Elysia({
 		set.status = 410
 		return { error: 'Organization member role updates have been disabled' }
 	})
-````

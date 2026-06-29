@@ -1,12 +1,3 @@
-# Backend Source Reference - src/modules/business-webhooks/message-event-formatter.ts
-
-Original source path: `apps/backend/src/modules/business-webhooks/message-event-formatter.ts`
-Line count: 522
-SHA-256: `320bfe91919d6298c5101d9af4dc452b6cd656362d8d2897f5677c81a369cb7b`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import prisma from '../../lib/prisma'
 
 type MessageEventName = 'message.received' | 'message.sent'
@@ -528,5 +519,3 @@ export async function formatMessageWebhookPayload(
 export function isMessageWebhookEvent(eventName: string): eventName is MessageEventName {
 	return isMessageEventName(eventName)
 }
-
-````

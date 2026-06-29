@@ -1,12 +1,3 @@
-# Backend Source Reference - src/modules/flow/runtime-service.ts
-
-Original source path: `apps/backend/src/modules/flow/runtime-service.ts`
-Line count: 7207
-SHA-256: `c3a2dbf26d38bb4451a8e2d2bfd9a5f64c389307726c259d3d303e5d672b81b5`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import prisma from '../../lib/prisma'
 import { isUuid } from '../../lib/utils'
 import type { Prisma } from '../../generated/prisma'
@@ -7213,5 +7204,3 @@ export const __test__ = {
 	buildFlowRuntimeAdditionalAttributes,
 	isRecoverableLabelAssignmentError,
 }
-
-````

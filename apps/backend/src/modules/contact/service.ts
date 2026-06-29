@@ -1,12 +1,3 @@
-# Backend Source Reference - src/modules/contact/service.ts
-
-Original source path: `apps/backend/src/modules/contact/service.ts`
-Line count: 735
-SHA-256: `b782e3889c81ed009102f431018493be8c71c4724bceb7c217fed0bfad55fd15`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import prisma from '../../lib/prisma'
 import { isUuid, resolveAppId } from '../../lib/utils'
 import { BusinessWebhookDispatchService } from '../business-webhooks/dispatch-service'
@@ -741,5 +732,3 @@ export abstract class ContactService {
 		}
 	}
 }
-
-````

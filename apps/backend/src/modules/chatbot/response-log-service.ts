@@ -1,12 +1,3 @@
-# Backend Source Reference - src/modules/chatbot/response-log-service.ts
-
-Original source path: `apps/backend/src/modules/chatbot/response-log-service.ts`
-Line count: 689
-SHA-256: `fafd8d02bb2a20e1a8a5bf7887e8b030d6cf89527f1e2d5a5b3c7c358a64ce37`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import { randomUUID } from 'crypto'
 import prisma from '../../lib/prisma'
 import { maintenanceQueue } from '../../lib/queue'
@@ -695,5 +686,3 @@ export const __test__ = {
 	computeAiResponseOperationalAnalysis,
 	shouldPreferAsyncPersistence,
 }
-
-````

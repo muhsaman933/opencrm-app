@@ -1,12 +1,3 @@
-# Backend Source Reference - src/modules/agent/index.ts
-
-Original source path: `apps/backend/src/modules/agent/index.ts`
-Line count: 230
-SHA-256: `d48262c4c2ba879d11fefa5ba0ebd6bd5223dee8a2d817e9d206050817549115`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import { Elysia, t } from 'elysia'
 import { AgentService } from './service'
 import { AgentRequestModel } from './model'
@@ -236,5 +227,3 @@ export const agent = new Elysia({ tags: ['User'] })
 			query: t.Object({ appId: t.Optional(t.String()) }),
 		},
 	)
-
-````

@@ -1,12 +1,3 @@
-# Backend Source Reference - src/modules/instagram/index.ts
-
-Original source path: `apps/backend/src/modules/instagram/index.ts`
-Line count: 249
-SHA-256: `70c25bdfa2fbd42425ee0c99ffc931b2300c2a2d7764f121203666227449279f`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import { Elysia, t } from 'elysia'
 import { InstagramService } from './service'
 import { WebhookService } from '../webhook/service'
@@ -255,5 +246,3 @@ export const instagram = new Elysia({ tags: ['Instagram'] })
 			}),
 		},
 	)
-
-````

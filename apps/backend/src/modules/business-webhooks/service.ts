@@ -1,12 +1,3 @@
-# Backend Source Reference - src/modules/business-webhooks/service.ts
-
-Original source path: `apps/backend/src/modules/business-webhooks/service.ts`
-Line count: 541
-SHA-256: `e4e95d827e2784a87dfce341c56b36a10c90783f4baaaf0478c212e567e586b5`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import prisma from '../../lib/prisma'
 import { BUSINESS_WEBHOOK_EVENTS } from './constants'
 
@@ -547,5 +538,3 @@ export abstract class BusinessWebhooksService {
 		return true
 	}
 }
-
-````

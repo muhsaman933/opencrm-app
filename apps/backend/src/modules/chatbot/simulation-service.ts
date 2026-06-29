@@ -1,12 +1,3 @@
-# Backend Source Reference - src/modules/chatbot/simulation-service.ts
-
-Original source path: `apps/backend/src/modules/chatbot/simulation-service.ts`
-Line count: 6618
-SHA-256: `7145ce371a8afa8e76e1d9f958bfbc022c868d697ff13acf15e9e2c69cacc417`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import prisma from "../../lib/prisma";
 import redis from "../../lib/redis";
 import { AIService } from "../ai/service";
@@ -6624,5 +6615,3 @@ export const __test__ = {
   buildServiceCatalogCategories,
   buildServiceCatalogResponse,
 };
-
-````

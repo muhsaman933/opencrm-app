@@ -1,12 +1,3 @@
-# Backend Source Reference - src/modules/contact/index.ts
-
-Original source path: `apps/backend/src/modules/contact/index.ts`
-Line count: 369
-SHA-256: `c9a7c6fefa48e504d96532bb03113da118d904d29846f22b738117bba5fdc7bc`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import { Elysia, t } from 'elysia'
 import { ContactService } from './service'
 import { ContactRequestModel } from './model'
@@ -375,5 +366,3 @@ export const contact = new Elysia({ prefix: '/contacts', tags: ['Contact'] })
 			params: t.Object({ id: t.String() }),
 		},
 	)
-
-````

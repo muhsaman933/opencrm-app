@@ -1,12 +1,3 @@
-# Backend Source Reference - src/modules/label/index.ts
-
-Original source path: `apps/backend/src/modules/label/index.ts`
-Line count: 132
-SHA-256: `31e22b1648276c9034c0e345259bbd688e5a4305ac6925fbcb33a7cf1dcb526d`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import { Elysia, t } from 'elysia'
 import { LabelService } from './service'
 import { LabelModel, LabelRequestModel } from './model'
@@ -138,5 +129,3 @@ export const label = new Elysia({ prefix: '/labels', tags: ['Label'] })
 			params: t.Object({ id: t.String(), labelId: t.String() }),
 		},
 	)
-
-````

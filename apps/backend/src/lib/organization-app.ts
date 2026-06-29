@@ -1,12 +1,3 @@
-# Backend Source Reference - src/lib/organization-app.ts
-
-Original source path: `apps/backend/src/lib/organization-app.ts`
-Line count: 177
-SHA-256: `667684992b3d8a24e9fc9415389d540f17d2b5f2b794aecb270b42394dc6bf9d`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 // @ts-nocheck
 import { randomBytes } from 'node:crypto'
 import prisma from './prisma'
@@ -183,5 +174,3 @@ export async function ensureOrganizationAppLink(org: {
 
 	return app.id
 }
-
-````

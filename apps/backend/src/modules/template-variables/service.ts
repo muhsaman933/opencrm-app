@@ -1,12 +1,3 @@
-# Backend Source Reference - src/modules/template-variables/service.ts
-
-Original source path: `apps/backend/src/modules/template-variables/service.ts`
-Line count: 32
-SHA-256: `13c02c63e99315547e4e7902af43ecbfc4b965dc6fcb92d067e0ed7902588fb4`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import { prisma } from '../../lib/prisma'
 import { resolveAppId } from '../../lib/utils'
 
@@ -38,5 +29,3 @@ export const TemplateVariableService = {
 		})
 	},
 }
-
-````

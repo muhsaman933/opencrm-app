@@ -1,12 +1,3 @@
-# Backend Source Reference - src/modules/whatsapp/baileys-service-client.ts
-
-Original source path: `apps/backend/src/modules/whatsapp/baileys-service-client.ts`
-Line count: 169
-SHA-256: `95c276fd3c1860c2fab7002ad6a3646599041b28d9e33904168ac89de108d7ce`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 function normalizeUrl(value: string | null | undefined) {
 	const trimmed = String(value || '').trim()
 	if (!trimmed) return null
@@ -175,5 +166,3 @@ export abstract class BaileysServiceClient {
 		return unwrapData<{ externalId?: string }>(payload)
 	}
 }
-
-````
