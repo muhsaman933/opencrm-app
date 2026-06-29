@@ -1,0 +1,15 @@
+{
+  "name": "opencrm-app",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "lint": "echo 'Gate 5 belum selesai'",
+    "build": "echo 'Gate 5 belum selesai'",
+    "dev": "echo 'Gate 5 belum selesai'",
+    "db:generate": "echo 'Gate 5 belum selesai'",
+    "db:migrate": "echo 'Gate 5 belum selesai'",
+    "db:seed": "echo 'Gate 5 belum selesai'"
+  }
+}
