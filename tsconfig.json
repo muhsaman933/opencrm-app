@@ -1,12 +1,31 @@
+# Root Source Reference - tsconfig.json
+
+Original source path: `tsconfig.json`
+Line count: 21
+SHA-256: `7e488c3d3a99a50897f34919a623e631b5c806dfe7581fed73aa3db1cf47f77a`
+
+Use this file as an exact source-shape reference when rebuilding the matching root file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
+
+````json
 {
-  "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
-    "moduleResolution": "Bundler",
-    "strict": true,
-    "paths": {
-      "@/*": ["./*"]
-    }
-  },
-  "include": ["apps/**/*"]
+	"compilerOptions": {
+		"target": "ES2022",
+		"module": "ESNext",
+		"moduleResolution": "bundler",
+		"lib": ["ES2022"],
+		"strict": true,
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		"resolveJsonModule": true,
+		"declaration": true,
+		"declarationMap": true,
+		"composite": true,
+		"noEmit": true,
+		"types": ["bun-types"]
+	},
+	"references": [{ "path": "./apps/backend" }, { "path": "./apps/frontend" }],
+	"exclude": ["node_modules", "dist", ".turbo"]
 }
+
+````
