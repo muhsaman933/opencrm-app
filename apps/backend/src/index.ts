@@ -1,12 +1,3 @@
-# Backend Source Reference - src/index.ts
-
-Original source path: `apps/backend/src/index.ts`
-Line count: 344
-SHA-256: `159f4101b08d0845d66c6a3b9e11d7c6d44e6254150a829611803c24b662a085`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````ts
 import { cors } from '@elysiajs/cors'
 import { Elysia } from 'elysia'
 import { config as loadDotEnv } from 'dotenv'
@@ -63,7 +54,10 @@ const backendDir = resolve(currentDir, '..')
 const workspaceDir = resolve(currentDir, '../../..')
 
 // Load backend-local .env first, then workspace .env as fallback.
-for (const envPath of [resolve(backendDir, '.env'), resolve(workspaceDir, '.env')]) {
+for (const envPath of [
+	resolve(backendDir, '.env'),
+	resolve(workspaceDir, '.env'),
+]) {
 	if (existsSync(envPath)) {
 		loadDotEnv({ path: envPath, override: false })
 	}
@@ -105,7 +99,14 @@ export const app = new Elysia()
 				return allowedOrigins.includes(origin)
 			},
 			credentials: true,
-			methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
+			methods: [
+				'GET',
+				'POST',
+				'PUT',
+				'DELETE',
+				'PATCH',
+				'OPTIONS',
+			],
 			allowedHeaders: [
 				'Content-Type',
 				'Authorization',
@@ -141,9 +142,9 @@ export const app = new Elysia()
 			.use(message)
 			.use(contact)
 			.use(customer)
-				.group('/whatsapp-channels', (app) => app.use(whatsapp))
-				.group('/waba', (app) => app.use(waba))
-				.use(webhook)
+			.group('/whatsapp-channels', (app) => app.use(whatsapp))
+			.group('/waba', (app) => app.use(waba))
+			.use(webhook)
 			.use(businessWebhooks)
 			.use(webhooks)
 			.use(media)
@@ -169,11 +170,12 @@ export const app = new Elysia()
 			.use(agentSettings)
 			.use(whatsappModule)
 			.use(templateVariables)
-				.use(developerKeys)
+			.use(developerKeys)
 			// Specific compatibility mappings
 			.get('/ai-settings', async ({ query, headers, resolvedAppId }) => {
 				const appId = resolvedAppId || query.appId || headers['x-app-id']
-				if (!appId) return { error: 'Organization or app ID required' }
+				if (!appId)
+					return { error: 'Organization or app ID required' }
 				const { AIService } = await import('./modules/ai/service')
 				const settings = await AIService.getSettings(appId)
 				const providerConfigurations =
@@ -189,24 +191,38 @@ export const app = new Elysia()
 					...settings,
 					active_provider: activeProvider,
 					active_embedding_provider: activeEmbeddingProvider,
-					provider_configurations: providerConfigurations.providers,
-					model_provider: activeProvider || settings?.model_provider || null,
-					embedding_provider: activeEmbeddingProvider || activeProvider || null,
+					provider_configurations:
+						providerConfigurations.providers,
+					model_provider:
+						activeProvider || settings?.model_provider || null,
+					embedding_provider:
+						activeEmbeddingProvider || activeProvider || null,
 					api_endpoint:
-						activeProviderConfig?.base_url || settings?.api_endpoint || null,
-					api_key: activeProviderConfig?.api_key || settings?.api_key || null,
+						activeProviderConfig?.base_url ||
+						settings?.api_endpoint ||
+						null,
+					api_key:
+						activeProviderConfig?.api_key || settings?.api_key || null,
 					api_version:
-						activeProviderConfig?.api_version || settings?.api_version || null,
+						activeProviderConfig?.api_version ||
+						settings?.api_version ||
+						null,
 					deployment_name:
 						activeProviderConfig?.deployment_name ||
 						settings?.deployment_name ||
 						null,
 					model_name:
-						settings?.model_name || activeProviderConfig?.model_name || null,
+						activeProviderConfig?.model_name ||
+						settings?.model_name ||
+						null,
 					temperature:
-						activeProviderConfig?.temperature ?? settings?.temperature ?? null,
+						activeProviderConfig?.temperature ??
+						settings?.temperature ??
+						null,
 					max_tokens:
-						activeProviderConfig?.max_tokens ?? settings?.max_tokens ?? null,
+						activeProviderConfig?.max_tokens ??
+						settings?.max_tokens ??
+						null,
 				}
 
 				return { success: true, payload }
@@ -214,22 +230,29 @@ export const app = new Elysia()
 			.put(
 				'/ai-settings',
 				async ({ query, headers, resolvedAppId, body, set }) => {
-					const appId = resolvedAppId || query.appId || headers['x-app-id']
+					const appId =
+						resolvedAppId || query.appId || headers['x-app-id']
 					if (!appId) {
 						set.status = 400
-						return { error: 'Organization or app ID required' }
+						return {
+							error: 'Organization or app ID required',
+						}
 					}
 
 					const { AIService } = await import('./modules/ai/service')
 					const nextBody = (body || {}) as Record<string, any>
-					const settings = await AIService.updateSettings(appId, nextBody)
+					const settings = await AIService.updateSettings(
+						appId,
+						nextBody,
+					)
 
 					return { success: true, payload: settings }
 				},
 			)
 			.get('/ai-providers', async () => {
 				const { AIService } = await import('./modules/ai/service')
-				const providers = await AIService.getProviderConfigurations()
+				const providers =
+					await AIService.getProviderConfigurations()
 				return { success: true, payload: providers }
 			})
 			.put(
@@ -237,61 +260,88 @@ export const app = new Elysia()
 				async ({ params, body, set }) => {
 					try {
 						const { AIService } = await import('./modules/ai/service')
-						const config = await AIService.upsertProviderConfiguration(
-							params.provider,
-							body,
-						)
+						const config =
+							await AIService.upsertProviderConfiguration(
+								params.provider,
+								body,
+							)
 						return { success: true, payload: config }
 					} catch (error: any) {
 						set.status = 400
-						return { error: error?.message || 'Failed to save provider config' }
+						return {
+							error: error?.message || 'Failed to save provider config',
+						}
 					}
 				},
 			)
-			.post('/ai-providers/:provider/test', async ({ params, body, set }) => {
-				try {
-					const { AIService } = await import('./modules/ai/service')
-					const result = await AIService.testProviderModel(
-						params.provider,
-						(body || {}) as any,
-					)
-					return { success: true, payload: result }
-				} catch (error: any) {
-					set.status = 400
-					return { error: error?.message || 'Failed to test provider model' }
-				}
-			})
-			.patch('/ai-providers/active', async ({ body, set }) => {
-				try {
-					const { AIService } = await import('./modules/ai/service')
-					const provider = await AIService.setActiveProvider(
-						(body as any)?.provider || '',
-					)
-					return { success: true, payload: { active_provider: provider } }
-				} catch (error: any) {
-					set.status = 400
-					return { error: error?.message || 'Failed to set active provider' }
-				}
-			})
-			.patch('/ai-providers/embedding-active', async ({ body, set }) => {
-				try {
-					const { AIService } = await import('./modules/ai/service')
-					const provider = await AIService.setActiveEmbeddingProvider(
-						(body as any)?.provider || '',
-					)
-					return {
-						success: true,
-						payload: { active_embedding_provider: provider },
+			.post(
+				'/ai-providers/:provider/test',
+				async ({ params, body, set }) => {
+					try {
+						const { AIService } = await import('./modules/ai/service')
+						const result = await AIService.testProviderModel(
+							params.provider,
+							(body || {}) as any,
+						)
+						return { success: true, payload: result }
+					} catch (error: any) {
+						set.status = 400
+						return {
+							error:
+								error?.message || 'Failed to test provider model',
+						}
 					}
-				} catch (error: any) {
-					set.status = 400
-					return {
-						error: error?.message || 'Failed to set active embedding provider',
+				},
+			)
+			.patch(
+				'/ai-providers/active',
+				async ({ body, set }) => {
+					try {
+						const { AIService } = await import('./modules/ai/service')
+						const provider =
+							await AIService.setActiveProvider(
+								(body as any)?.provider || '',
+							)
+						return {
+							success: true,
+							payload: { active_provider: provider },
+						}
+					} catch (error: any) {
+						set.status = 400
+						return {
+							error:
+								error?.message || 'Failed to set active provider',
+						}
 					}
-				}
-			})
+				},
+			)
+			.patch(
+				'/ai-providers/embedding-active',
+				async ({ body, set }) => {
+					try {
+						const { AIService } = await import('./modules/ai/service')
+						const provider =
+							await AIService.setActiveEmbeddingProvider(
+								(body as any)?.provider || '',
+							)
+						return {
+							success: true,
+							payload: { active_embedding_provider: provider },
+						}
+					} catch (error: any) {
+						set.status = 400
+						return {
+							error:
+								error?.message ||
+								'Failed to set active embedding provider',
+						}
+					}
+				},
+			)
 			.use(
-				new Elysia({ prefix: '/whatsapp' }).use(whatsappModule).use(whatsapp),
+				new Elysia({ prefix: '/whatsapp' })
+					.use(whatsappModule)
+					.use(whatsapp),
 			),
 	)
 
@@ -303,9 +353,9 @@ export const app = new Elysia()
 			.use(message)
 			.use(contact)
 			.use(customer)
-				.group('/whatsapp-channels', (app) => app.use(whatsapp))
-				.group('/waba', (app) => app.use(waba))
-				.use(webhook)
+			.group('/whatsapp-channels', (app) => app.use(whatsapp))
+			.group('/waba', (app) => app.use(waba))
+			.use(webhook)
 			.use(businessWebhooks)
 			.use(webhooks)
 			.use(media)
@@ -338,7 +388,9 @@ if (IS_API_MODE) {
 	console.log(
 		`OpenCRM API v2.0 running at http://localhost:${app.server?.port}`,
 	)
-	console.log(`📚 Swagger docs at http://localhost:${app.server?.port}/docs`)
+	console.log(
+		`📚 Swagger docs at http://localhost:${app.server?.port}/docs`,
+	)
 	console.log(`🔐 Auth at http://localhost:${app.server?.port}/auth`)
 } else if (APP_MODE === 'worker' || APP_MODE === 'scheduler') {
 	await import('./workers')
@@ -350,5 +402,3 @@ if (IS_API_MODE) {
 
 // Export type for Eden Treaty
 export type App = typeof app
-
-````

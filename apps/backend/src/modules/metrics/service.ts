@@ -1,0 +1,1 @@
+// Stub metrics:service.ts

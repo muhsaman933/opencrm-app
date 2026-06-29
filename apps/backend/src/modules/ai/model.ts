@@ -1,0 +1,1 @@
+// Stub ai:model.ts

@@ -1,12 +1,3 @@
-# Backend Source Reference - package.json
-
-Original source path: `apps/backend/package.json`
-Line count: 59
-SHA-256: `b3117587747af57580faad8696a3a54f36192b7b7792d336b7b1e2eb225467d4`
-
-Use this file as an exact source-shape reference when rebuilding the matching backend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
-
-````json
 {
 	"name": "backend",
 	"version": "1.0.0",
@@ -65,5 +56,3 @@ Use this file as an exact source-shape reference when rebuilding the matching ba
 		"./types": "./src/types.ts"
 	}
 }
-
-````

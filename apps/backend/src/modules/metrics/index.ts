@@ -1,0 +1,1 @@
+// Stub metrics:index.ts

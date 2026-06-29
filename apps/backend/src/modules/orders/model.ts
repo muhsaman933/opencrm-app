@@ -1,0 +1,1 @@
+// Stub orders:model.ts

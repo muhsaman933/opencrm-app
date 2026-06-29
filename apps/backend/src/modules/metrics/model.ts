@@ -1,0 +1,1 @@
+// Stub metrics:model.ts
