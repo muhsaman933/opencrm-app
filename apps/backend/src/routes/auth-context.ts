@@ -1,7 +1,6 @@
-import { Elysia } from 'elysia'
-
-export const authContextRoute = new Elysia().get('/auth/context', () => ({
-  authenticated: false,
-  organization: null,
-  onboardingRequired: true,
-}))
+// Backend route context placeholder. Replace with exact source reference later.
+export const authContext = {
+  appId: null,
+  organizationId: null,
+  userId: null,
+}
