@@ -1,0 +1,144 @@
+# Frontend Source Reference - src/components/ui/pagination.tsx
+
+Original source path: `apps/frontend/src/components/ui/pagination.tsx`
+Line count: 134
+SHA-256: `da6e44e48ff0e93f145d05ca57ca074277e6dfcceb23cab633bac9e13aba09bd`
+
+Use this file as an exact source-shape reference when rebuilding the matching frontend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
+
+````tsx
+import type * as React from 'react'
+
+import { cn } from '@/lib/utils'
+import { Button } from '@/components/ui/button'
+import {
+	ChevronLeftIcon,
+	ChevronRightIcon,
+	MoreHorizontalIcon,
+} from 'lucide-react'
+
+function Pagination({ className, ...props }: React.ComponentProps<'nav'>) {
+	return (
+		<nav
+			role="navigation"
+			aria-label="pagination"
+			data-slot="pagination"
+			className={cn('mx-auto flex w-full justify-center', className)}
+			{...props}
+		/>
+	)
+}
+
+function PaginationContent({
+	className,
+	...props
+}: React.ComponentProps<'ul'>) {
+	return (
+		<ul
+			data-slot="pagination-content"
+			className={cn('gap-0.5 flex items-center', className)}
+			{...props}
+		/>
+	)
+}
+
+function PaginationItem({ ...props }: React.ComponentProps<'li'>) {
+	return <li data-slot="pagination-item" {...props} />
+}
+
+type PaginationLinkProps = {
+	isActive?: boolean
+} & Pick<React.ComponentProps<typeof Button>, 'size'> &
+	React.ComponentProps<'a'>
+
+function PaginationLink({
+	className,
+	isActive,
+	size = 'icon',
+	...props
+}: PaginationLinkProps) {
+	return (
+		<Button
+			variant={isActive ? 'outline' : 'ghost'}
+			size={size}
+			className={cn(className)}
+			nativeButton={false}
+			render={
+				<a
+					aria-current={isActive ? 'page' : undefined}
+					data-slot="pagination-link"
+					data-active={isActive}
+					{...props}
+				/>
+			}
+		/>
+	)
+}
+
+function PaginationPrevious({
+	className,
+	text = 'Previous',
+	...props
+}: React.ComponentProps<typeof PaginationLink> & { text?: string }) {
+	return (
+		<PaginationLink
+			aria-label="Go to previous page"
+			size="default"
+			className={cn('pl-1.5!', className)}
+			{...props}
+		>
+			<ChevronLeftIcon data-icon="inline-start" />
+			<span className="hidden sm:block">{text}</span>
+		</PaginationLink>
+	)
+}
+
+function PaginationNext({
+	className,
+	text = 'Next',
+	...props
+}: React.ComponentProps<typeof PaginationLink> & { text?: string }) {
+	return (
+		<PaginationLink
+			aria-label="Go to next page"
+			size="default"
+			className={cn('pr-1.5!', className)}
+			{...props}
+		>
+			<span className="hidden sm:block">{text}</span>
+			<ChevronRightIcon data-icon="inline-end" />
+		</PaginationLink>
+	)
+}
+
+function PaginationEllipsis({
+	className,
+	...props
+}: React.ComponentProps<'span'>) {
+	return (
+		<span
+			aria-hidden
+			data-slot="pagination-ellipsis"
+			className={cn(
+				"size-8 [&_svg:not([class*='size-'])]:size-4 flex items-center justify-center",
+				className,
+			)}
+			{...props}
+		>
+			<MoreHorizontalIcon />
+			<span className="sr-only">More pages</span>
+		</span>
+	)
+}
+
+export {
+	Pagination,
+	PaginationContent,
+	PaginationEllipsis,
+	PaginationItem,
+	PaginationLink,
+	PaginationNext,
+	PaginationPrevious,
+}
+
+````
