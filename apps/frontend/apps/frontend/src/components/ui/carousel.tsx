@@ -239,4 +239,3 @@ export {
 	CarouselNext,
 	useCarousel,
 }
-

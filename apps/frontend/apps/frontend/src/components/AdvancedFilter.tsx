@@ -186,4 +186,3 @@ export default function AdvancedFilter({ onApplyFilters }: Props) {
 		</div>
 	)
 }
-

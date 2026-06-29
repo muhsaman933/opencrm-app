@@ -1,4 +1,3 @@
-`ts
 /**
  * Frontend API Client
  *
@@ -2657,4 +2656,3 @@ export const tickets = {
 			`/tickets/conversations/${conversationId}${boardId ? `?board_id=${encodeURIComponent(boardId)}` : ''}`,
 		).then((response) => response.data),
 }
-

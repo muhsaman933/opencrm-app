@@ -570,4 +570,3 @@ function AccordionItem({
 		</div>
 	)
 }
-

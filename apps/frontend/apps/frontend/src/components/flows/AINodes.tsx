@@ -469,4 +469,3 @@ export const AI_NODE_COMPONENTS = {
 export function getAINodeComponent(type: string) {
 	return AI_NODE_COMPONENTS[type as keyof typeof AI_NODE_COMPONENTS]
 }
-

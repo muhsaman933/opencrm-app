@@ -151,4 +151,3 @@ export function DevelopersSubmenuRow(props: DevelopersSubmenuRowProps) {
 		</div>
 	)
 }
-

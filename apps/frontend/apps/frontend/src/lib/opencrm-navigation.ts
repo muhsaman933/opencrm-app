@@ -1,4 +1,3 @@
-`ts
 import type { LucideIcon } from 'lucide-react'
 import {
 	BookOpen,
@@ -139,4 +138,3 @@ export const OPENCRM_GROUP_LABELS: Record<OpenCrmNavGroup, string> = {
 	outreach: 'Outreach',
 	otomasi: 'Otomasi',
 }
-

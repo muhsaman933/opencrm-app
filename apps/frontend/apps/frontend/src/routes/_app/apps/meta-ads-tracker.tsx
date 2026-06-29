@@ -92,4 +92,3 @@ function MetaAdsTrackerPage() {
 		</main>
 	)
 }
-

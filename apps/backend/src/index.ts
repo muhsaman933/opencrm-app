@@ -341,3 +341,4 @@ if (IS_API_MODE) {
 
 // Export type for Eden Treaty
 export type App = typeof app
+

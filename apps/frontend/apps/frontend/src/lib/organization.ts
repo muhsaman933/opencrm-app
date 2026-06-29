@@ -1,4 +1,3 @@
-`ts
 /**
  * Organization API Client
  *
@@ -519,4 +518,3 @@ export async function getDefaultOrgRedirect(
 		return null
 	}
 }
-

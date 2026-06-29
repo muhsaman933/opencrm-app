@@ -1,4 +1,3 @@
-`ts
 declare module 'pg' {
 	export type PoolConfig = {
 		connectionString?: string
@@ -9,4 +8,3 @@ declare module 'pg' {
 		end(): Promise<void>
 	}
 }
-

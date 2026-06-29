@@ -6305,4 +6305,3 @@ function PropertyGroup({
 		</div>
 	)
 }
-

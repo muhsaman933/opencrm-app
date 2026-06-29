@@ -1,4 +1,3 @@
-`ts
 /* eslint-disable */
 
 // @ts-nocheck
@@ -1191,4 +1190,3 @@ declare module '@tanstack/react-start' {
     router: Awaited<ReturnType<typeof getRouter>>
   }
 }
-

@@ -40,3 +40,4 @@ export const agentSettings = new Elysia({
 			body: AgentSettingsRequestModel.update,
 		},
 	)
+

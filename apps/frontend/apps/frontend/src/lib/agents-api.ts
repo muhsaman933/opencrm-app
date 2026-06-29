@@ -1,4 +1,3 @@
-`ts
 /**
  * Agents Management API Helper
  * Extended API functions for the new Agents Management system
@@ -235,4 +234,3 @@ export const agentsManagement = {
 			}),
 	},
 }
-

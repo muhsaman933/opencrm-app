@@ -1,4 +1,3 @@
-`ts
 import { treaty } from '@elysiajs/eden'
 import type { App } from 'backend'
 import { getAppIdFromCookie, getOrgSlugFromCookie } from './organization'
@@ -48,4 +47,3 @@ export const getAuthToken = () => {
 }
 
 export default api
-

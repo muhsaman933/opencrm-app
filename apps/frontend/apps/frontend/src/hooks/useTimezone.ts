@@ -1,4 +1,3 @@
-`ts
 /**
  * useTimezone Hook
  *
@@ -149,4 +148,3 @@ export function useTimezone() {
 		detectBrowserTimezone,
 	}
 }
-

@@ -8,4 +8,3 @@ export const Route = createFileRoute('/_app/channels/telegram')({
 function RouteComponent() {
 	return <div>Hello "/channels/telegram"!</div>
 }
-

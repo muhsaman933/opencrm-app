@@ -601,4 +601,3 @@ function CustomerDetail() {
 		</main>
 	)
 }
-

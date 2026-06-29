@@ -46,4 +46,3 @@ function DevelopersApiDocumentationPage() {
 export const Route = createFileRoute('/_app/developers/api-documentation')({
 	component: DevelopersApiDocumentationPage,
 })
-

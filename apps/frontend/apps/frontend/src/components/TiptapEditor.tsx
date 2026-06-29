@@ -314,4 +314,3 @@ const TiptapEditor = ({
 }
 
 export default TiptapEditor
-

@@ -59,4 +59,3 @@ function IntegrationPage() {
 		</div>
 	)
 }
-

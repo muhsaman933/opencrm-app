@@ -269,4 +269,3 @@ export function MessageItem({ item }: { item: MessageProps }) {
 		</div>
 	)
 }
-

@@ -1,4 +1,3 @@
-`ts
 declare global {
 	interface Window {
 		FB: facebook.FacebookStatic
@@ -177,4 +176,3 @@ export async function getPageAccessToken(pageId: string): Promise<string> {
 	}
 	return page.access_token
 }
-

@@ -1902,4 +1902,3 @@ function ChannelBadgeUpload({
 		</div>
 	)
 }
-

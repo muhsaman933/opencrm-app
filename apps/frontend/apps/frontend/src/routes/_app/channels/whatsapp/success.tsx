@@ -97,4 +97,3 @@ function WhatsAppSuccessPage() {
 		</div>
 	)
 }
-

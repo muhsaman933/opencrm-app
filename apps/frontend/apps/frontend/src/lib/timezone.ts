@@ -1,4 +1,3 @@
-`ts
 /**
  * Timezone-aware timestamp formatting utilities
  */
@@ -239,4 +238,3 @@ export function formatDuration(seconds: number): string {
 
 	return `${minutes}m`
 }
-

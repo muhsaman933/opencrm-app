@@ -1,4 +1,3 @@
-`ts
 /**
  * Common timezone list for user selection
  */
@@ -203,4 +202,3 @@ export function formatTimezoneLabel(value: string): string {
 	const tz = getTimezoneByValue(value)
 	return tz ? `${tz.label} (${tz.offset})` : value
 }
-

@@ -1,4 +1,3 @@
-`ts
 /**
  * Chat Preferences Utility
  * Manages pinned chats and muted notifications in localStorage
@@ -153,4 +152,3 @@ export function sortConversationsWithPinned<
 		return b.timestamp.getTime() - a.timestamp.getTime()
 	})
 }
-

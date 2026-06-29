@@ -54,4 +54,3 @@ function BotChannelPage() {
 		</div>
 	)
 }
-

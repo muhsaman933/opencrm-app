@@ -21,4 +21,3 @@ function AspectRatio({
 }
 
 export { AspectRatio }
-

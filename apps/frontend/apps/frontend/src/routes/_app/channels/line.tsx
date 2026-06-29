@@ -59,4 +59,3 @@ function LineChannelPage() {
 		</div>
 	)
 }
-

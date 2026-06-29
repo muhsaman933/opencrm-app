@@ -328,4 +328,3 @@ export function getAINodeTypeLabel(type: string): string {
 export function getAINodeIcon(type: string): any {
 	return AI_NODE_TYPES[type]?.icon || Bot
 }
-

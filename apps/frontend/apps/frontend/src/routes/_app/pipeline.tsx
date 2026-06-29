@@ -681,4 +681,3 @@ import {
 
 // Export all types for use in component files
 export type { Stage, Pipeline, Deal, CustomField, ViewMode, SettingsTab }
-

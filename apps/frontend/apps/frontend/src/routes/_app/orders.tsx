@@ -900,4 +900,3 @@ function OrdersManagementPage() {
 		</div>
 	)
 }
-

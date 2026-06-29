@@ -1,4 +1,3 @@
-`json
 {
 	"$schema": "https://ui.shadcn.com/schema.json",
 	"style": "base-nova",
@@ -24,4 +23,3 @@
 	"menuAccent": "subtle",
 	"registries": {}
 }
-

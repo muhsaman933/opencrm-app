@@ -1,4 +1,3 @@
-`ts
 export const playNotificationSound = (allowed: boolean) => {
 	if (!allowed) return
 
@@ -21,4 +20,3 @@ export const sendBrowserNotification = (title: string, body: string) => {
 		})
 	}
 }
-

@@ -36,7 +36,6 @@ export default defineConfig({
 		force: forceOptimizeDeps,
 	},
 	plugins: [
-		devtools(),
 		nitro({
 			preset: 'node',
 			devServer: {

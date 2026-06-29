@@ -368,4 +368,3 @@ function ProductStockPage() {
 		</div>
 	)
 }
-

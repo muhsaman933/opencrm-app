@@ -1703,4 +1703,3 @@ export default function AIConfigurationManager() {
 		</div>
 	)
 }
-

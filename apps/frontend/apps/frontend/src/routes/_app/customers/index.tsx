@@ -697,4 +697,3 @@ function CustomersPage() {
 		</main>
 	)
 }
-

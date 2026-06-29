@@ -1,4 +1,3 @@
-`ts
 export type DevelopersSubmenuItem = {
 	title: string
 	description: string
@@ -776,4 +775,3 @@ export function resolveMessagesState(value?: string | null): MessagesState {
 	}
 	return 'ready'
 }
-

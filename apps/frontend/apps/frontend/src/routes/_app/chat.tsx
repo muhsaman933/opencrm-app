@@ -3975,4 +3975,3 @@ function SignalRow({
 		</div>
 	)
 }
-

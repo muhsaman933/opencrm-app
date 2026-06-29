@@ -1,4 +1,3 @@
-`ts
 export type AppRole = 'admin' | 'owner' | 'supervisor' | 'agent' | string
 
 export function normalizeAppRole(role: string | null | undefined): string {
@@ -75,4 +74,3 @@ export function isPathAllowedForRole(
 		(path) => pathname === path || pathname.startsWith(`${path}/`),
 	)
 }
-

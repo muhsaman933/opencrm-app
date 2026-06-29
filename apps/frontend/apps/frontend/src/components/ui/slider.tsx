@@ -58,4 +58,3 @@ function Slider({
 }
 
 export { Slider }
-

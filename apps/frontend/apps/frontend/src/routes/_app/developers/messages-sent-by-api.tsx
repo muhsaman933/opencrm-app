@@ -151,4 +151,3 @@ function DevelopersMessagesSentByApiPage() {
 export const Route = createFileRoute('/_app/developers/messages-sent-by-api')({
 	component: DevelopersMessagesSentByApiPage,
 })
-

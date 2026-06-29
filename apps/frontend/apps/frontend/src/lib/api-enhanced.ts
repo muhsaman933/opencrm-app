@@ -1,4 +1,3 @@
-`ts
 /**
  * Enhanced Frontend API Client with App Credentials
  * All API calls now require app_id from environment or localStorage
@@ -533,4 +532,3 @@ export default {
 	autoResponders,
 	labels,
 }
-

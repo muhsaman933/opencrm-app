@@ -366,4 +366,3 @@ export function CreateTemplateModal({
 		</div>
 	)
 }
-

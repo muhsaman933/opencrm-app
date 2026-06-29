@@ -375,4 +375,3 @@ function AIAgentListPage() {
 		</main>
 	)
 }
-

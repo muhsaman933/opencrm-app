@@ -274,4 +274,3 @@ export default function ChatWindow({ conversation }: Props) {
 		</div>
 	)
 }
-

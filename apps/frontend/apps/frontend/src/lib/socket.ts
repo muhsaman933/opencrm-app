@@ -1,4 +1,3 @@
-`ts
 /**
  * Socket.io Client
  *
@@ -142,4 +141,3 @@ export function removeAllListeners() {
 	socket?.removeAllListeners('ai:suggestion')
 	socket?.removeAllListeners('agent:presence')
 }
-

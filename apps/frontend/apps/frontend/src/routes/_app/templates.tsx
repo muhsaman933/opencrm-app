@@ -416,4 +416,3 @@ function TemplatesPage() {
 		</div>
 	)
 }
-

@@ -590,4 +590,3 @@ function DashboardPage() {
 		</main>
 	)
 }
-

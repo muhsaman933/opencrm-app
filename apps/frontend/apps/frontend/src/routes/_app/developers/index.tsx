@@ -352,4 +352,3 @@ function DevelopersIndexPage() {
 export const Route = createFileRoute('/_app/developers/')({
 	component: DevelopersIndexPage,
 })
-

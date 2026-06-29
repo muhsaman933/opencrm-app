@@ -2473,4 +2473,3 @@ function TeamModal({
 		</div>
 	)
 }
-

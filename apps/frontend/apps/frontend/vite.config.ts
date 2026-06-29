@@ -1,4 +1,3 @@
-`ts
 import tailwindcss from '@tailwindcss/vite'
 import { devtools } from '@tanstack/devtools-vite'
 import { tanstackStart } from '@tanstack/react-start/plugin/vite'
@@ -38,7 +37,7 @@ export default defineConfig({
 	},
 	// @ts-expect-error
 	plugins: [
-		devtools(),
+
 		nitro({
 			preset: 'node',
 			devServer: {
@@ -100,4 +99,3 @@ export default defineConfig({
 		chunkSizeWarningLimit: 1000,
 	},
 })
-
