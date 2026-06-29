@@ -1,3 +1,12 @@
+# Frontend Source Reference - src/routes/_app.tsx
+
+Original source path: `apps/frontend/src/routes/_app.tsx`
+Line count: 292
+SHA-256: `26642db5b497c7c6694ea9de21b6e1be4ddd5570686baf7421f4a8de78d331a7`
+
+Use this file as an exact source-shape reference when rebuilding the matching frontend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
+
+````tsx
 import {
 	createContext,
 	useContext,
@@ -167,21 +176,21 @@ function AppLayout() {
 		let mounted = true
 		setResolvingAppContext(true)
 
-		const resolveContext = async () => {
-			try {
-				const context = await syncOrganizationContextFromSession()
-				if (!mounted) return
+			const resolveContext = async () => {
+				try {
+					const context = await syncOrganizationContextFromSession()
+					if (!mounted) return
 
-				if (!context.authenticated) {
-					navigate({ to: '/login', replace: true })
-					return
-				}
+					if (!context.authenticated) {
+						navigate({ to: '/login', replace: true })
+						return
+					}
 
-				const resolvedAppId =
-					context.organization?.appId || context.organization?.slug || ''
-				if (resolvedAppId) {
-					setAppId(resolvedAppId)
-					return
+					const resolvedAppId =
+						context.organization?.appId || context.organization?.slug || ''
+					if (resolvedAppId) {
+						setAppId(resolvedAppId)
+						return
 				}
 
 				if (context.onboardingRequired) {
@@ -289,3 +298,5 @@ export function AppProvider({
 }) {
 	return <AppContext.Provider value={value}>{children}</AppContext.Provider>
 }
+
+````

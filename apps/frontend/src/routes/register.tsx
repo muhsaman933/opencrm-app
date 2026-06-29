@@ -1,3 +1,12 @@
+# Frontend Source Reference - src/routes/register.tsx
+
+Original source path: `apps/frontend/src/routes/register.tsx`
+Line count: 180
+SHA-256: `465d2d36dc3de3afc2ce4e52c34448b1066d19bf8b87185660601bebfb1052e9`
+
+Use this file as an exact source-shape reference when rebuilding the matching frontend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
+
+````tsx
 import { createFileRoute, Link, useNavigate } from '@tanstack/react-router'
 import { Eye, EyeOff } from 'lucide-react'
 import { useState } from 'react'
@@ -134,16 +143,7 @@ function RegisterPage() {
 								<Field>
 									<FieldLabel htmlFor="password">Password</FieldLabel>
 									<div className="relative">
-										<Input
-											id="password"
-											type={showPassword ? 'text' : 'password'}
-											placeholder="Minimum 8 characters"
-											value={password}
-											onChange={(e) => setPassword(e.target.value)}
-											minLength={8}
-											required
-											className="bg-background pr-10"
-										/>
+										<Input id="password" type={showPassword ? 'text' : 'password'} placeholder="Minimum 8 characters" value={password} onChange={(e) => setPassword(e.target.value)} minLength={8} required className="bg-background pr-10" />
 										<Button type="button" variant="ghost" size="icon-sm" className="absolute right-1.5 top-1/2 -translate-y-1/2" onClick={() => setShowPassword(!showPassword)}>
 											{showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
 										</Button>
@@ -168,27 +168,23 @@ function RegisterPage() {
 							</FieldGroup>
 						</form>
 					</div>
-				</div>
 
-				<div className="flex flex-col space-y-4 text-center">
-					<p className="text-muted-foreground text-sm">
-						Already have an account?{' '}
-						<Link to="/login" className="font-semibold text-primary hover:underline">
-							Login here
-						</Link>
-					</p>
-					<p className="text-muted-foreground px-8 text-xs">
-						By registering, you agree to our{' '}
-						<Link to="/terms" className="hover:text-primary underline underline-offset-4">
-							Terms of Service
-						</Link>{' '}
-						and{' '}
-						<Link to="/privacy" className="hover:text-primary underline underline-offset-4">
-							Privacy Policy
-						</Link>
-					</p>
+					<div className="flex flex-col space-y-4 text-center">
+						<p className="text-muted-foreground text-sm">
+							Already have an account?{' '}
+							<Link to="/login" className="font-semibold text-primary hover:underline">Login here</Link>
+						</p>
+						<p className="text-muted-foreground px-8 text-xs">
+							By registering, you agree to our{' '}
+							<Link to="/terms" className="hover:text-primary underline underline-offset-4">Terms of Service</Link>{' '}
+							and{' '}
+							<Link to="/privacy" className="hover:text-primary underline underline-offset-4">Privacy Policy</Link>
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
 	)
 }
+
+````

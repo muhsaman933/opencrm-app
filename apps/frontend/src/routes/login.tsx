@@ -1,3 +1,12 @@
+# Frontend Source Reference - src/routes/login.tsx
+
+Original source path: `apps/frontend/src/routes/login.tsx`
+Line count: 200
+SHA-256: `92b43121b98207f4b44b6c4bf33e64a76694c74a7fb36bcfa85804c84c09bde5`
+
+Use this file as an exact source-shape reference when rebuilding the matching frontend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
+
+````tsx
 import { createFileRoute, Link, useNavigate } from '@tanstack/react-router'
 import { useState } from 'react'
 import { Alert, AlertDescription } from '@/components/ui/alert'
@@ -197,3 +206,5 @@ function LoginPage() {
 		</div>
 	)
 }
+
+````

@@ -1,3 +1,12 @@
+# Frontend Source Reference - src/routes/onboarding.tsx
+
+Original source path: `apps/frontend/src/routes/onboarding.tsx`
+Line count: 170
+SHA-256: `2930a4884f634b72e33d88eb5ee463f89a871f9851aac3736c8c8297d3307310`
+
+Use this file as an exact source-shape reference when rebuilding the matching frontend file. Preserve imports, API calls, class names, config keys, route behavior, localStorage/cookie keys, and env variable names unless `OPENCLAW.md` explicitly overrides a visible navigation scope.
+
+````tsx
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import { useEffect, useMemo, useState } from 'react'
 import { Alert, AlertDescription } from '@/components/ui/alert'
@@ -82,6 +91,7 @@ function OnboardingPage() {
 			setError('Company name must be at least 2 characters')
 			return
 		}
+
 		if (cleanSlug.length < 3) {
 			setError('Slug must be at least 3 characters')
 			return
@@ -166,3 +176,5 @@ function OnboardingPage() {
 		</div>
 	)
 }
+
+````
