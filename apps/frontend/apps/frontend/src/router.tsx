@@ -1,4 +1,3 @@
-`tsx
 import { createRouter } from '@tanstack/react-router'
 
 // Import the generated route tree
@@ -14,3 +13,4 @@ export const getRouter = () => {
 
 	return router
 }
+
